@@ -33,5 +33,5 @@ const ingredients = [
  })
 
  console.log(element);
- const ingredientsEl = document.querySelector(".ingredients");
+ const ingredientsEl = document.querySelector("#ingredients");
 ingredientsEl.append(...element);
