@@ -6,11 +6,11 @@ function onFormSubmit(event) {
     event.preventDefault();
 
     const formEl = event.currentTarget.elements;
-    //console.log(formEl);
+    
     const email = formEl.email.value.trim();
-    //console.log(email);
+  
     const password = formEl.password.value.trim();
-   // console.log(password);
+   
 
     const formData = {
         email,
@@ -18,6 +18,7 @@ function onFormSubmit(event) {
     }
     if (email==="" || password==="") {
         alert ("Будь-ласка, заповніть всі поля")
+        return;
      } else {
         console.log(formData);
      }
